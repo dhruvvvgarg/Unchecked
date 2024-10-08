@@ -1,0 +1,163 @@
+<!-- HTML CODE FOR POPUP -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkbox Auto-Check</title>
+  <!-- styling of the popup goes here. -->
+  <style>
+    body {
+      height: 200px;
+      width: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: linear-gradient(90deg, #Ff5900 0%, #Ffa905 100%);
+    }
+    h1{
+      color: blanchedalmond;
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+    h2{
+      color: blanchedalmond;
+      font-size: 22px;
+    }
+    #img{
+      height: 200px;
+      width: 130px;
+      margin-right: 25px;
+    }
+    .exception{
+      display: flex;
+      
+    }
+    #Head{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+    }
+    #revert{
+      height: 40px;
+      width: 100px;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 40px;
+      font-size: 18px;
+      cursor: pointer;
+      color: #ffffff;
+      background-color: rgba(255, 9, 9, 0);
+      border: 3px solid rgb(255, 255, 255);
+      backdrop-filter: blur(10px);
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      font-weight: bold;
+    }
+    #removeExceptionButton{
+      height: 40px;
+      width: 40px;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 40px;
+      font-size: 30px;
+      cursor: pointer;
+      color: #ffffff;
+      background-color: rgba(255, 9, 9, 0);
+      border: 3px solid rgb(255, 255, 255);
+      backdrop-filter: blur(10px);
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    #uncheckBtn{
+      height: 40px;
+      width: 100px;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 40px;
+      font-size: 18px;
+      cursor: pointer;
+      color: #ffffff;
+      background-color: rgba(9, 255, 9, 0);
+      border: 3px solid rgb(255, 255, 255);
+      backdrop-filter: blur(10px);
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      font-weight: bold;
+    }
+    .btn{
+      display: flex;
+    }
+    #addExceptionButton{
+      display: flex;
+      height: 40px;
+      width: 40px;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 40px;
+      font-size: 30px;
+      cursor: pointer;
+      color: #ffffff;
+      background-color: rgba(9, 255, 9, 0);
+      border: 3px solid rgb(255, 255, 255);
+      backdrop-filter: blur(10px);
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+    }
+    #revert:hover{
+      background-color: rgba(245, 14, 14, 0);
+      border: 3px solid rgba(255,255,255,0.2);
+    }
+    #uncheckBtn:hover{
+      background-color: rgba(9, 255, 9, 0);
+      border: 3px solid rgba(255,255,255,0.2);
+    }
+    #removeExceptionButton:hover{
+      background-color: rgba(245, 14, 14, 0);
+      border: 3px solid rgba(255,255,255,0.2);
+    }
+    #addExceptionButton:hover{
+      background-color: rgba(9, 255, 9, 0);
+      border: 3px solid rgba(255,255,255,0.2);
+    }
+    .main{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 25px;
+      /* margin-right: 50px; */
+    }
+    .ogl{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+<!-- BUTTONS  -->
+<div class="ogl">
+<div class="main">
+  <h1>UnChecked</h1>
+  <div class="btn">
+    <button id="revert" class="BTN">Revert</button>
+    <button id="uncheckBtn" class="BTN">Uncheck</button>
+  </div>
+  <h2>Exception</h2>
+  <div class="exception">
+    <button id="addExceptionButton">+</button>
+    <button id="removeExceptionButton">-</button>
+</div>
+</div>
+<img src="logo.png" alt="" id="img">
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
